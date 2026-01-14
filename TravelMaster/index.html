@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travel - Discover Your Next Adventure</title>
+    <meta name="description" content="Create unforgettable memories with our curated tours and luxury accommodations in Kenya, Tanzania, and Zanzibar.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-compass"></i>
+                <span>Wanderlust Travel</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080');">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Discover Your Next Adventure</h1>
+            <p>Create unforgettable memories with our curated tours and luxury accommodations in Kenya, Tanzania, and Zanzibar</p>
+            <div class="hero-buttons">
+                <a href="tours.html" class="btn btn-primary">Explore Tours</a>
+                <a href="hotels.html" class="btn btn-secondary">Book Hotels</a>
+            </div>
+        </div>
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-container">
+                <div class="search-card">
+                    <div class="search-grid">
+                        <div class="search-field">
+                            <label for="destination">Destination</label>
+                            <input type="text" id="destination" placeholder="Where to?">
+                        </div>
+                        <div class="search-field">
+                            <label for="checkin">Check-in</label>
+                            <input type="date" id="checkin">
+                        </div>
+                        <div class="search-field">
+                            <label for="checkout">Check-out</label>
+                            <input type="date" id="checkout">
+                        </div>
+                        <div class="search-field">
+                            <button class="btn btn-search">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="featured-destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Destinations</h2>
+                <p>Discover the world's most breathtaking coastal locations</p>
+            </div>
+            <div class="destinations-grid" id="featured-tours">
+                <!-- Tours will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Experience the Journey</h2>
+                <p>Watch our travelers share their incredible coastal experiences</p>
+            </div>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        title="Travel Experience Video"
+                        frameborder="0" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Adventure?</h2>
+                <p>Join thousands of happy travelers who chose Wanderlust Travel</p>
+                <div class="cta-buttons">
+                    <a href="tours.html" class="btn btn-white">Browse Tours</a>
+                    <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-compass"></i>
+                        <span>Wanderlust Travel</span>
+                    </div>
+                    <p>Creating unforgettable travel experiences around the East African coast since 2008.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="hotels.html">Hotels</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Flight Booking</a></li>
+                        <li><a href="#">Hotel Reservations</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                        <li><a href="#">Visa Assistance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +254 (711) 123-456</li>
+                        <li><i class="fas fa-envelope"></i> contact@wanderlusttravel.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Links Road, Mamba Roundabout,Nyali</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Wanderlust Travel. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

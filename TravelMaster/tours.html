@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>East African Coast Tours - Wanderlust Travel</title>
+    <meta name="description" content="Discover amazing tours in Kenya, Tanzania, and Zanzibar. Book your coastal adventure with handcrafted experiences for every type of traveler.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-compass"></i>
+                <span>Wanderlust Travel</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html" class="active">Tours</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="padding-top: 80px;">
+        <div class="container">
+            <div class="section-header">
+                <h1>Discover Amazing Tours</h1>
+                <p>Handcrafted experiences for every type of traveler along the East African coast</p>
+            </div>
+
+            <!-- Filter Options -->
+            <div style="margin-bottom: 2rem; display: flex; flex-wrap: wrap; gap: 1rem;">
+                <select class="form-field" style="width: 180px;">
+                    <option value="all">All Destinations</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="tanzania">Tanzania</option>
+                    <option value="zanzibar">Zanzibar</option>
+                </select>
+                
+                <select class="form-field" style="width: 180px;">
+                    <option value="all">All Durations</option>
+                    <option value="1-3">1-3 Days</option>
+                    <option value="4-7">4-7 Days</option>
+                    <option value="8+">8+ Days</option>
+                </select>
+                
+                <select class="form-field" style="width: 180px;">
+                    <option value="all">Price Range</option>
+                    <option value="under-1500">Under $1,500</option>
+                    <option value="1500-2000">$1,500-$2,000</option>
+                    <option value="2000+">$2,000+</option>
+                </select>
+            </div>
+
+            <!-- Tours Table -->
+            <div class="form-container">
+                <h3>Available Tours</h3>
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Tour Package</th>
+                                <th>Duration</th>
+                                <th>Price</th>
+                                <th>Rating</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tours-table-body">
+                            <!-- Tours will be loaded dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Booking Form -->
+            <div class="form-container" id="booking-form">
+                <h3>Book Your Tour</h3>
+                <div id="tour-booking-message"></div>
+                <form id="tour-booking-form">
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="numberOfTravelers">Number of Travelers *</label>
+                            <select id="numberOfTravelers" name="numberOfTravelers" required>
+                                <option value="">Select number</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4+ People</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="preferredTour">Preferred Tour *</label>
+                            <select id="preferredTour" name="preferredTour" required>
+                                <option value="">Select tour</option>
+                                <!-- Options will be populated dynamically -->
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="preferredDate">Preferred Date *</label>
+                            <input type="date" id="preferredDate" name="preferredDate" required>
+                        </div>
+
+                        <div class="form-field" style="grid-column: 1 / -1;">
+                            <label for="specialRequirements">Special Requirements</label>
+                            <textarea id="specialRequirements" name="specialRequirements" placeholder="Any special requirements or requests..."></textarea>
+                        </div>
+
+                        <div style="grid-column: 1 / -1;">
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Book Tour Now</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-compass"></i>
+                        <span>Wanderlust Travel</span>
+                    </div>
+                    <p>Creating unforgettable travel experiences around the East African coast since 2008.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="hotels.html">Hotels</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Flight Booking</a></li>
+                        <li><a href="#">Hotel Reservations</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                        <li><a href="#">Visa Assistance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +254 (711) 123-456</li>
+                        <li><i class="fas fa-envelope"></i> contact@wanderlusttravel.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Links Road, Mamba Roundabout,Nyali</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Wanderlust Travel. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

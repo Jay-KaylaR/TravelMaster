@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wanderlust Travel</title>
+    <meta name="description" content="Get in touch with Wanderlust Travel to plan your perfect East African coastal adventure. We're here to help with tours, hotels, and travel planning.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-compass"></i>
+                <span>Wanderlust Travel</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="padding-top: 80px;">
+        <div class="container">
+            <div class="section-header">
+                <h1>Get In Touch</h1>
+                <p>Ready to start your next coastal adventure? We're here to help plan your perfect trip.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+                <!-- Contact Form -->
+                <div class="form-container">
+                    <h3>Send Us a Message</h3>
+                    <div id="contact-message"></div>
+                    <form id="contact-form" action="https://formsubmit.co/your@email.com" method="POST">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <div class="form-field">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="emailContact">Email Address *</label>
+                            <input type="email" id="emailContact" name="email" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="phoneContact">Phone Number</label>
+                            <input type="tel" id="phoneContact" name="phone">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="travelInterest">Travel Interest</label>
+                            <select id="travelInterest" name="travelInterest">
+                                <option value="">Select your interest</option>
+                                <option value="tours">Guided Tours</option>
+                                <option value="hotels">Hotel Bookings</option>
+                                <option value="flights">Flight Reservations</option>
+                                <option value="packages">Complete Packages</option>
+                                <option value="custom">Custom Itinerary</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="messageContact">Message *</label>
+                            <textarea id="messageContact" name="message" required placeholder="Tell us about your dream destination or any questions you have..."></textarea>
+                        </div>
+
+                        <div class="checkbox-field">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to our newsletter for travel tips and exclusive offers</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div style="display: flex; flex-direction: column; gap: 2rem;">
+                    <div class="form-container" style="background: #f9fafb;">
+                        <h3>Contact Information</h3>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div style="display: flex; align-items: center;">
+                                <div style="width: 48px; height: 48px; background: #3b82f6; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                                    <i class="fas fa-map-marker-alt" style="color: white;"></i>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600;">Address</div>
+                                    <div style="color: #6b7280;"> Links Road, Mamba Roundabout, Nyali</div>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; align-items: center;">
+                                <div style="width: 48px; height: 48px; background: #f59e0b; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                                    <i class="fas fa-phone" style="color: white;"></i>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600;">Phone</div>
+                                    <div style="color: #6b7280;">+254792239448</div>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; align-items: center;">
+                                <div style="width: 48px; height: 48px; background: #8b5cf6; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                                    <i class="fas fa-envelope" style="color: white;"></i>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600;">Email</div>
+                                    <div style="color: #6b7280;">contact@wanderlusttravel.com</div>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; align-items: center;">
+                                <div style="width: 48px; height: 48px; background: #10b981; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                                    <i class="fas fa-clock" style="color: white;"></i>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600;">Business Hours</div>
+                                    <div style="color: #6b7280;">Mon-Fri: 9AM-6PM, Sat: 10AM-4PM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="form-container">
+                        <h3>Follow Us</h3>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="#" style="width: 48px; height: 48px; background: #1877f2; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: background-color 0.3s;">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" style="width: 48px; height: 48px; background: #1da1f2; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: background-color 0.3s;">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" style="width: 48px; height: 48px; background: #e4405f; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: background-color 0.3s;">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" style="width: 48px; height: 48px; background: #0077b5; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: background-color 0.3s;">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Map Frame -->
+                    <div class="form-container" style="padding: 0; overflow: hidden;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368459391!3d40.74844097932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1633024800000!5m2!1sen!2sus"
+                            width="100%"
+                            height="300"
+                            style="border: 0;"
+                            allowfullscreen
+                            loading="lazy"
+                            title="Office Location">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-compass"></i>
+                        <span>Wanderlust Travel</span>
+                    </div>
+                    <p>Creating unforgettable travel experiences around the East African coast since 2008.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="hotels.html">Hotels</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Flight Booking</a></li>
+                        <li><a href="#">Hotel Reservations</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                        <li><a href="#">Visa Assistance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +254792239448</li>
+                        <li><i class="fas fa-envelope"></i> contact@wanderlusttravel.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i>  Links Road, Mamba Roundabout,Nyali</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Wanderlust Travel. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <style>
+        @media (max-width: 768px) {
+            main > .container > div:nth-child(2) {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</body>
+</html>
